@@ -1,14 +1,13 @@
-import { Button, Input } from "antd"
+import { Input } from "antd"
 import type { GetProps } from 'antd';
 
-type Props = {}
 
 type SearchProps = GetProps<typeof Input.Search>;
 
 const { Search } = Input;
 const onSearch: SearchProps['onSearch'] = (value, _e, info) => console.log(info?.source, value);
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
     
   return (
     <nav className="border-b">

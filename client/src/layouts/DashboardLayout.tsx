@@ -1,9 +1,8 @@
 import { Outlet } from "react-router-dom"
 import Navbar from "../components/Navbar"
 
-type Props = {}
 
-const DashboardLayout = (props: Props) => {
+const DashboardLayout = () => {
   return (
     <main>
         <Navbar/>
